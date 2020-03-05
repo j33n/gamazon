@@ -1,0 +1,116 @@
+@import "../../styles/_variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide {
+  display: none
+}
+
+.canvas {
+  display: flex;
+
+  // @media (max-width: $mobile-width) {}
+}
+
+.video {
+  padding: 0;
+}
+
+.markers-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  z-index: 100;
+  top: 20%;
+  bottom: 20%;
+  right: 0;
+  left: 0;
+  width: 80%;
+  height: 45%;
+
+  @media (max-width: $mobile-width) {
+    width: 85%;
+    height: 23%;
+  }
+
+}
+
+
+.markers {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom-left {
+  border-left: 4px solid $green-check;
+  border-bottom: 4px solid $green-check;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.top {
+  display: flex;
+}
+
+.top-left {
+  border-top: 4px solid $green-check;
+  border-left: 4px solid $green-check;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  border-top: 4px solid $green-check;
+  border-right: 4px solid $green-check;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom-right {
+  border-right: 4px solid $green-check;
+  border-bottom: 4px solid $green-check;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  button {
+    padding: 0;
+    position: absolute;
+    top: -60px;
+  }
+
+  img {
+    width: 35px;
+  }
+}
